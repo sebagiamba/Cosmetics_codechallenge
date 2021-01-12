@@ -1,0 +1,7 @@
+*** API
+- The /search service is filtering data only by name because the mock data.js has dummy text under "about" property.
+- The API has only one endpoint so I wanted to leave it simple, without breaking the code into functions.
+- I'm filtering data by isActive property but I don't know the real meaning of this prop.
+
+*** Front
+- I'm not showing the description because there are dummy data under that property.

@@ -1,0 +1,82 @@
+/**
+ * The menu is technically the header of the site, it contains the styles for the drop down of the Search Bar.
+ *
+ */
+
+$lineHeightForNav: 70px;
+$lineHeightForSearch: 50px;
+
+
+header.menu {
+
+    // ...
+    width: 100%;
+    position: relative;
+    z-index: 10;
+
+    div.menu-container {
+        width: 100%;
+        background-color: black;
+        padding: 0 20px;
+        text-align: left;
+
+        div.menu-holder {
+            position: relative;
+            width: 100%;
+            max-width: $siteWidth;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            line-height: $lineHeightForNav;
+            color: white;
+            text-align: left;
+            display: inline-block;
+        }
+        nav {
+            display: inline-block;
+            margin-left: 60px;
+
+            i {
+                color: white;
+                font-size: 30px;
+                line-height: $lineHeightForNav;
+            }
+
+            a.nav-item {
+                font-family: Helvetica, Arial, Sans-Serif;
+                font-size: 17px;
+                line-height: $lineHeightForNav;
+                text-transform: uppercase;
+                text-decoration: none;
+                white-space: nowrap;
+                border-bottom: 1px solid transparent;
+                color: #FFF;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    span.search-container {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        display: flex;
+        align-items: center;
+        input {
+            height: 40px;
+            background: #555;
+            border: none;
+            border-radius: 2px;
+            color: #FFF;
+            font-size: 18px;
+            padding: 5px;
+        }
+        i {
+            margin-left: -35px;
+        }
+    }
+
+}

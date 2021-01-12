@@ -1,0 +1,48 @@
+.cosmeticCard {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 23%;
+  padding: 15px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: Helvetica, Arial, Sans-Serif;
+
+  .name {
+    font-size: 20px;
+    text-align: center;
+    height: 45px;
+  }
+
+  .tags {
+    font-size: 15px;
+    text-align: left;
+    margin-top: 10px;
+    color: #CCCCCC;
+  }
+
+  .img_wrap {
+    text-align: center;
+    margin: 25px;
+
+    img {
+      height: 250px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    .btn_buy, .soldout {
+      padding: 10px 13px 10px 13px;
+
+      &.btn_buy {
+        background-color: darkgray;
+        cursor: pointer;
+      }
+    }
+  }
+}
